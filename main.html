@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
-	  <style>
-		  #grid{
-			  display:grid;
-			  grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
-              grid-template-rows: 124px 124px 124px 124px 124px;
-              grid-column:span 4 / auto;		  
-		  }
-	  </style>
+    <style>
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+      }
+    </style>
   </head>
   <body>
-    <body id="grid">
+    <div id="grid">
       <div>1</div>
       <div>2</div>
       <div>3</div>
@@ -24,7 +22,6 @@
       <div>8</div>
       <div>9</div>
       <div>10</div>
-    </body>
-    <script type="text/javascript" src="./script.js"></script>
+    </div>
   </body>
 </html>
