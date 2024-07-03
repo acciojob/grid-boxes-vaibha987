@@ -4,7 +4,7 @@
     <style>
       #grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 242.5px);
         grid-template-rows: repeat(5, 124px);
         gap: 10px;
       }
@@ -16,6 +16,9 @@
 }
 		#grid > div:first-child {
   grid-column: span 4;
+}
+		#grid > div:second-child {
+  grid-row: span 4;
 }
     </style>
   </head>
