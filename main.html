@@ -2,24 +2,24 @@
 <html>
   <head>
     <style>
-      #grid {
-        display: grid;
-        grid-template-columns: repeat(4, 242.5px);
-        grid-template-rows: repeat(5, 124px);
-        gap: 10px;
-      }
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+		#grid > div:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 		#grid > div {
   padding: 20px;
   text-align: center;
   border: 1px solid black;
   background-color: #f0f0f0;
 }
-		#grid > div:first-child {
-  grid-column: span 4;
-}
-		#grid > div:first-child {
-  grid-row: span 4;
-}
+      
     </style>
   </head>
   <body>
